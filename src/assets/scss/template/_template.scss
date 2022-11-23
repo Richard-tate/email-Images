@@ -6,6 +6,7 @@ body,
 html, 
 .body {
   background: #f3f3f3 !important;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .container.header {
@@ -56,4 +57,91 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+
+table.button.cta table td {
+  background: #303030 !important;
+}
+
+
+.card_available{
+  background-color: #ffffff;
+  max-width: 90% !important;
+  margin: 0 auto;
+
+  .hr_border{
+    margin: 0 3.5%;
+  }
+  .hide_above{
+    opacity: 0;
+  }
+
+  .price, .available{
+    padding: 10px 0;
+  }
+  .available{
+    margin-left: 15px;
+    position: relative;
+  }
+  .price{
+    padding-left: 10px;
+  }
+  .available .before{
+    position: absolute;
+    background-color: #303030;
+    width: 2px;
+    height: 65%;
+    top: 15%;
+    right: 5px;
+  }
+
+  h5{
+    margin-left: 5px;
+  }
+  .row.brand_flex{
+    margin: 0 10px;
+  }
+  .cta-btn{
+    padding: 10px 16px 0 10px ;
+  }
+  
+  @media only screen and (max-width: 596px) {
+  
+
+   td table.row:nth-child(1) tr th:nth-child(2), td table.row:nth-child(1) tr th:nth-child(3){
+      display: inline-block !important;
+   }
+   .row.brand_flex{
+      margin: 0 5px;
+   }
+   .row.brand_flex tr{
+     width: 100%;
+   }
+   
+   
+  }
+}
+
+table.body .columns.available, table.body .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+.card_available td table.row:nth-child(1) tr th:nth-child(1){
+  padding-bottom: 0 !important;
+
+}
+
+// below screen size 596px
+@media only screen and (max-width:596px) {
+
+  .hide_above{
+    opacity: 1 !important;
+  }
+  .card_available .cta-btn{
+    padding: 20px 16px 0 10px !important;
+  }
+  
 }
